@@ -1,0 +1,167 @@
+################################################################################
+#                                 Parameters                                   #
+################################################################################
+# Documentation link
+# https://swagger.io/docs/specification/describing-parameters/
+
+#-----------------
+# Path params
+#-----------------
+user-id:
+  in: path
+  name: user_id
+  schema:
+    type: integer
+  required: true
+  description: >
+    the user id (or the logged_in_user.pk in login() response)
+
+#-----------------
+# Query params
+#-----------------
+username:
+  in: query
+  name: username
+  schema:
+    type: string
+  required: true
+  description: >
+    the username (or nickname)
+#-----------------
+password:
+  in: query
+  name: password
+  schema:
+    type: string
+  required: true
+  description: >
+    the password to use for authentication
+
+#-----------------
+# Header params
+#-----------------
+ua:
+  in: header
+  name: User-Agent
+  schema:
+    type: string
+  required: true
+  description: >
+    the User-Agent used by the Instagram App (be carefull in generation of a new one)
+accept-language:
+  in: header
+  name: Accept-Language
+  schema:
+    type: string
+  required: true
+  description: >
+    the User-Agent used by the Instagram App (be carefull in generation of a new one)
+ig-connection-speed:
+  in: header
+  name: X-IG-Connection-Speed
+  schema:
+    type: string
+    # format: uuid
+  required: true
+ig-bandwidth-speed-kbps:
+  in: header
+  name: X-IG-Bandwidth-Speed-KBPS
+  schema:
+    type: string
+    # format: uuid
+  required: true
+ig-bandwidth-total-bytes:
+  in: header
+  name: X-IG-Bandwidth-TotalBytes-B
+  schema:
+    type: string
+    # format: uuid
+  required: true
+ig-bandwidth-total-time:
+  in: header
+  name: X-IG-Bandwidth-TotalTime-MS
+  schema:
+    type: string
+    # format: uuid
+  required: true
+ig-connection-type:
+  in: header
+  name: X-IG-Connection-Type
+  schema:
+    type: string
+    # format: uuid
+  required: true
+ig-capabilities:
+  in: header
+  name: X-IG-Capabilities
+  schema:
+    type: string
+    # format: uuid
+  required: true
+ig-app-id:
+  in: header
+  name: X-IG-App-ID
+  schema:
+    type: string
+    # format: uuid
+  required: true
+
+#-----------------
+# Cookie params
+#-----------------
+ds_user:
+  in: cookie
+  name: ds_user
+  schema:
+    type: string
+    # format: uuid
+  required: true
+ds_user_id:
+  in: cookie
+  name: ds_user_id
+  schema:
+    type: string
+    # format: uuid
+  required: true
+shbts:
+  in: cookie
+  name: shbts
+  schema:
+    type: string
+    # format: uuid
+  required: true
+mid:
+  in: cookie
+  name: mid
+  schema:
+    type: string
+    # format: uuid
+  required: true
+sessionid:
+  in: cookie
+  name: sessionid
+  schema:
+    type: string
+    # format: uuid
+  required: true
+csrftoken:
+  in: cookie
+  name: csrftoken
+  schema:
+    type: string
+    # format: uuid
+  required: true
+shbid:
+  in: cookie
+  name: shbid
+  schema:
+    type: string
+    # format: uuid
+  required: true
+rur:
+  in: cookie
+  name: rur
+  schema:
+    type: string
+    # format: uuid
+  required: true

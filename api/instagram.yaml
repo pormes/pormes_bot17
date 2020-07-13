@@ -1,0 +1,33 @@
+openapi: 3.0.1
+################################################################################
+#                              API Information                                 #
+################################################################################
+info:
+  title: Instagram API
+  description: The Instagram Private API in OpenAPI specs.v3.0
+  version: 0.0.1
+################################################################################
+#                  Host, Base Path, Schemes and Content Types                  #
+################################################################################
+servers:
+- url: https://i.instagram.com/api/v1
+  description: The private API of Instagram
+################################################################################
+#                              Paths (Endpoints)                               #
+################################################################################
+paths:
+  $ref: './endpoints.yaml'
+################################################################################
+#                                 Definitions                                  #
+################################################################################
+components:
+  securitySchemes:
+    $ref: './auth.yaml'
+  schemas:
+    $ref: './schemas.yaml#/schemas'
+  # headers:
+  #   $ref: './headers.yaml'
+  parameters:
+    $ref: './parameters.yaml'
+  requestBodies:
+    $ref: './body.yaml'

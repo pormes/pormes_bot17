@@ -1,0 +1,31 @@
+schemas:
+  User:
+    type: object
+    properties:
+      username:
+        type: string
+  Error:
+    type: object
+    properties:
+      message:
+        type: string
+      status:
+        type: string
+      error_type:
+        type: string
+  JsonObject:
+    type: object
+    properties:
+      message:
+        type: string
+      status:
+        type: string
+      error_type:
+        type: string
+  AuthBody:
+    type: object
+    properties:
+      ig_sig_key_version:
+        type: integer
+      signed_body:
+        type: string
