@@ -1,0 +1,36 @@
+{
+  "name": "instagram-api-toolkit",
+  "version": "0.0.1",
+  "description": "toolkit to create multiple SDKs of Instagram Private API for whatever languages and frameworks",
+  "main": "toolkit.js",
+  "repository": "https://github.com/instagrambot/instagram-api-toolkit.git",
+  "author": "Benedetto Abbenanti <b3nab@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "generate": "yarn build-schema && ./tools/auto_generate_sdks.sh",
+    "toolkit": "node toolkit.build.js",
+    "build-toolkit": "babel toolkit.js -o toolkit.build.js",
+    "viewer": "yarn build-schema && openapi-viewer instagram-api.bundle.json",
+    "install-python-sdk": "cd ./sdks/python && python setup.py install",
+    "test-python": "yarn install-python-sdk && python ./test/python-sdk.py",
+    "validate": "yarn build-schema && swagger-cli validate instagram-api.bundle.json",
+    "build-schema": "swagger-cli bundle -r -o instagram-api.bundle.json ./api/instagram.yaml"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "swagger-cli": "^2.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@openapitools/openapi-generator-cli": "^0.0.9-4.0.0-beta3",
+    "chalk": "^2.4.2",
+    "core-js": "3",
+    "enquirer": "^2.3.0",
+    "openapi-codegen": "^1.5.5",
+    "openapi-viewer": "^1.0.1",
+    "shelljs": "^0.8.3"
+  }
+}
