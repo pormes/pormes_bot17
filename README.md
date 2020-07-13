@@ -1,52 +1,26 @@
-<div align="center">
+<h1 align="center">
+  <img width="130" height="130" alt="instabot.js" src="https://raw.githubusercontent.com/instagrambot/instabot.js/master/app/assets/logo.png">
+  <br>
+  Instabot.js
+</h1>
 
-# instagram-api-toolkit
+<p align="center">
+  <strong>⚠️ The project is under early development, many bugs and architect changes are expected.</strong>
+</p>
 
-![Private Instagram API toolkit](private-instagram-api-toolkit-sdk-banner.png)
+We are working on an experimental development which is an attempt
+to recreate instabot as a pluggable desktop application with a simple and friendly ui.
 
-<!-- ## Instagram Private API SDKs -->
+## Contribute
 
-</div>
+The project uses the Node.js version compatible with the latest used in [electron](https://electronjs.org/).
+The current version can be found in the `.nvmrc`. We recommend using [nvm](https://github.com/creationix/nvm) for version management.
 
-### Use the library
+We respect code quality and tests. Therefore, each package has `lint` and `test` npm scripts which runs code validation and testing commands.
 
-If you want to get access to the **instagram private api** you need to download the sdk depending on the language/framework you are using, here you can find the sdks available (open the spoiler below).
+Also we are glad to see any suggestions and ideas, you can write them in issues.
 
-List of SDK for Instagram Private API
 
-  | Language/Framework | Package | Install or Download |
-  | --- | --- | --- |
-  | python | [private_instagram_sdk](sdks/python) | *Not published on PyPi*
+## License
 
-**(more on >> [Instagram Private API SDKs](/sdks))**
-
-### Explain the idea
-
-If you are a coder/programmer/developer and you want to access to the instagram api you already know that this is "not" possible, unless you use the public api, because the private api is only accessible from the Instagram mobile app.
-
-But **probably** you also know that someone can fake all parts of a request to an API so it's also possible to make Instagram think that our api calls are sended from his mobile app.
-Already there are many library that are trying to do just that, fake itself as an instagram mobile app and send login and other requests to the instagram private api.
-
-*So* the idea was to create a **single source of truth** ([SSOT](https://en.wikipedia.org/wiki/Single_source_of_truth)) and keep in mind various principles of software design and software development like [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) and [KISS](https://en.wikipedia.org/wiki/KISS_principle).
-
-### API design process
-
-To define a SSoT there is the needing of a standard to use and there isn't a better way to create a schema than using the [OpenAPI Specification v3](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md). 
-
-To inspect the actual schema you can just go to the folder [/api](/api) and see all schema's files.
-
----
-
-## Goal
-
-To accomplish the goal:
-
-1. We need to define a schema of the private instagram api using the [OpenAPI Specs](https://github.com/OAI/OpenAPI-Specification).
-
-2. Then we can use this language-agnostic schema to generate automatically an SDK/Client for every language or framework we want (unless we have generators we can create the SDK) using a [OpenAPI Generators](https://openapi-generator.tech/docs/generators) or [OpenAPI Codegen](https://github.com/Mermade/openapi-codegen).
-
----
-
-## Contribute to this project
-
-If you want to be part of the contributors of this project, read the instructions in [DEV.md](/DEV.md).
+Apache-2.0
