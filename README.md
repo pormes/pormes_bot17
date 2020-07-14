@@ -1,3 +1,34 @@
+Untuk keterangan lebih lanjut silahkan lihat demonstrasi pelaksanaan di channel youtube PORMES CHANNEL "https://www.youtube.com/channel/UCA2rlnCy-gu2J_7CsEc8PRA"
+For more information, see demonstration on my channel youtube PORMES CHANNEL "https://www.youtube.com/channel/UCA2rlnCy-gu2J_7CsEc8PRA"
+
+Perhatian : bisa dilakukan dengan proxy biasa maupun proxy settingan anda
+Attention : can be done with ordinary proxy or proxy settings 
+
+Tahap pertama jalankan environment python
+The first step is to run the python environment
+
+Tahap kedua jalankan script
+The second step is running the script
+
+Tahap ketiga upgrade npm dengan npm-upgrade (lihat tutorial npm-upgrade di PORMES CHANNELS)
+The third stage is upgrading npm with npm upgrade (see the npm-upgrade tutorial on PORMES CHANNELS)
+
+Tahap ke empat masukan dengan benar nilai jumlah permintaan like, unlike, follow, unfollow, hashtags dan lainnya dari permintaan konfigurasi followers
+The fourth stage of the input correctly values the number of requests like, unlike, follow, unfollow, hashtags and others from the followers configuration request
+
+Tahap kelima bersenang-senanglah dengan dunia Hacking
+The fifth stage have fun with the world of Hacking
+
+Ikuti saya di sosial media :
+Follow me on social media:
+
+Facebook  : Dikha Pormes
+Instagram : Pormes_Bot17
+Whatsapp  : +6281286003623
+Twitter   : Anon_Pormes17
+Youtube   : PORMES CHANNELS
+Github    : pormes
+
 # Instabot
 
 Free Instagram python bot, [private Instagram API emulator](https://github.com/instagrambot/instabot/tree/master/instabot/api) and a [huge amount of ready-to-use example scripts](https://github.com/instagrambot/instabot/tree/master/examples).
